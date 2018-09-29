@@ -1,0 +1,20 @@
+.container-fluid {
+    width: 70%;
+}
+
+.jumbotron {
+    background-image: url("../images/happyholidays.jpg");
+    background-size: contain;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    margin-top: 20px;
+    border-color: dodgerblue;
+}
+
+.card-header {
+    background-color: dodgerblue;
+    color: white;
+}
