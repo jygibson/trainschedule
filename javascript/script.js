@@ -66,11 +66,14 @@ $(document).ready(function () {
      console.log(first);
      console.log(frequency);
 
+     var now = moment();
+     console.log(now);
+
      //calculate difference for next train arrival
-     var nextTrain = moment().diff(moment(frequency, "X"), "current time");
+     var nextTrain = moment().diff(now % frequency);
      console.log (nextTrain);
 
-     var timeDiff = (nextTrain - frequency);
+     var timeDiff = (now - nextTrain);
      console.log(timeDiff);
 
      //creating the new row
