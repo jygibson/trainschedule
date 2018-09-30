@@ -66,8 +66,6 @@ $(document).ready(function () {
      console.log(first);
      console.log(frequency);
 
-     var firstTrainPretty = moment.unix(first).format("MM/DD/YYYY");
-
      //calculate difference for next train arrival
      var nextTrain = moment().diff(moment(frequency, "X"), "current time");
      console.log (nextTrain);
@@ -77,14 +75,13 @@ $(document).ready(function () {
 
      //creating the new row
      var newRow = $("<tr>").append(
-         $("<td").text(trainName),
+         $("<td>").text(trainName),
          $("<td>").text(dest),
-         $("<td>").text(firstTrainPretty),
          $("<td>").text(frequency),
          $("<td>").text(timeDiff),
         //  $("<td>").text(minutes)
      );
 
-     $(".card-body > tbody").append(newRow);
+     $(".table").append(newRow);
  })
 });
