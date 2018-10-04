@@ -3,9 +3,9 @@
 }
 
 .jumbotron {
-    background-image: url("../images/happyholidays.jpg");
+    background-image: url("../images/wmatamap.png");
     background-size: contain;
-    color: white;
+    color:black;
     text-align: center;
 }
 
